@@ -1,24 +1,24 @@
-const express = require('express'); // creo el server  
+const express = require('express');
 const app = express();
 
 
-// settings configuraciones del servidor
+// settings 
 
 app.set('port', process.env.PORT | 3000);
 
 
 
 
-// Middlewares funciones que se ejecutan antes de que lleguen a las rutas 
+// Middlewares 
 
-app.use(express.json()) // para que reconozca los datos enviados por la api
-
-
+app.use(express.json())
 
 
 
 
-//Routes urls de nuestro servidor
+
+
+//Routes urls 
 app.use(require('./routes/employees'))
 
 
